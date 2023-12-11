@@ -1,0 +1,143 @@
+body {
+    font-family: 'Alata', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9187FF;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+h1 {
+    margin: 0;
+    align-self: center;
+}
+
+.content {
+    padding: 40px; /* Adjusted padding for better spacing */
+}
+
+.blog-post {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.post-image {
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: left; /* Align text to the left by default */
+}
+
+/* Adjusted margin-top for better spacing */
+.blog-post h2 {
+    display: inline-block;
+    border-bottom: 7px solid #FFF856;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    margin-top: 0; /* Adjusted margin-top to reduce space above the title */
+}
+
+/* Adjusted margin-bottom for better spacing */
+.blog-post p {
+    font-size: 40px;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+}
+
+/* Alternate image placement for every other blog-post */
+.blog-post:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse the order of flex items for even elements */
+}
+
+/* Adjust text alignment for even elements */
+.blog-post:nth-child(even) .post-content {
+    text-align: right; /* Align text to the right for even elements */
+}
+
+
+.aboutContent {
+    padding: 40px;
+}
+
+.aboutPost {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.aboutImage {
+    width: 180%; /* Adjust as needed */
+    max-width: 2400px; /* Set a maximum width to maintain a standard portrait size */
+    overflow: hidden;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-post-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.aboutPost h2 {
+    display: inline-block;
+    border-bottom: 7px solid #FFF856;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.aboutPost p {
+    font-size: 39px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
