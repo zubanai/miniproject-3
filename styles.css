@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Alata";
+    src: url(Alata-Regular.ttf) format('truetype');
+}
+
+
 body {
     font-family: 'Alata', sans-serif;
     margin: 0;
@@ -27,7 +33,7 @@ h1 {
 }
 
 .content {
-    padding: 40px; /* Adjusted padding for better spacing */
+    padding: 40px; 
 }
 
 .blog-post {
@@ -51,35 +57,44 @@ h1 {
 .post-content {
     padding: 20px;
     flex-grow: 1;
-    text-align: left; /* Align text to the left by default */
+    text-align: left; 
 }
 
-/* Adjusted margin-top for better spacing */
 .blog-post h2 {
     display: inline-block;
     border-bottom: 7px solid #FFF856;
     font-size: 80px;
     line-height: 1;
-    margin-bottom: 10px; /* Adjusted margin-bottom */
-    margin-top: 0; /* Adjusted margin-top to reduce space above the title */
+    margin-bottom: 10px; 
+    margin-top: 0;
 }
 
-/* Adjusted margin-bottom for better spacing */
 .blog-post p {
     font-size: 40px;
-    margin-bottom: 10px; /* Adjusted margin-bottom */
+    margin-bottom: 10px;
 }
 
-/* Alternate image placement for every other blog-post */
 .blog-post:nth-child(even) {
-    flex-direction: row-reverse; /* Reverse the order of flex items for even elements */
+    flex-direction: row-reverse; 
 }
 
-/* Adjust text alignment for even elements */
 .blog-post:nth-child(even) .post-content {
-    text-align: right; /* Align text to the right for even elements */
+    text-align: right;
 }
 
+.about-button {
+    font-family: 'Alata', sans-serif;
+    color: yellow; 
+    text-decoration: none; 
+    font-size: 30px;
+}
+
+.back-button {
+    font-family: 'Alata', sans-serif;
+    color: yellow; 
+    text-decoration: none; 
+    font-size: 30px;
+}
 
 .aboutContent {
     padding: 40px;
@@ -92,8 +107,8 @@ h1 {
 }
 
 .aboutImage {
-    width: 180%; /* Adjust as needed */
-    max-width: 2400px; /* Set a maximum width to maintain a standard portrait size */
+    width: 180%;
+    max-width: 2400px; 
     overflow: hidden;
 }
 
@@ -140,4 +155,23 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+    .back-button {
+        font-size: 20px; 
+    }
+
+    .aboutContent {
+        padding: 20px; 
+    }
+
+    .aboutPost h2 {
+        font-size: 30px; 
+    }
+
+    .aboutPost p {
+        font-size: 16px; 
+    }
+}
 }
